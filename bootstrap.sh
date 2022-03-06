@@ -28,8 +28,6 @@ if [ ! -f /usr/bin/sudo ]; then
     exit 2
 fi
 
-sudo apt install ansible git
-
 # Add a sudoers file giving the current user permission to execute any sudo
 # command without a password. This ensures ansible-playbook can run.
 sudoers_file="/etc/sudoers.d/${USER}"
@@ -37,3 +35,5 @@ echo "${USER} ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee "${sudoers_file}"
 
 # Ensure the sudoers file is mode 0440 as per /etc/sudoers.d/README.
 sudo chmod 0440 "${sudoers_file}"
+
+sudo apt install ansible git
