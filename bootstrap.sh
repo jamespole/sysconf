@@ -28,4 +28,4 @@ if [ ! -f /usr/bin/sudo ]; then
     exit 2
 fi
 
-sudo apt install aptitude git
+sudo apt install ansible git
