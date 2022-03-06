@@ -25,3 +25,7 @@
       user: james
       key: https://github.com/jamespole.keys
       exclusive: yes
+  - name: Ensure packages are installed
+    apt:
+      name:
+      - gnucash
