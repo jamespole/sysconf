@@ -29,3 +29,5 @@ if [ ! -f /usr/bin/sudo ]; then
 fi
 
 sudo apt install ansible git
+
+echo "${USER} ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee "/etc/sudoers.d/${USER}"
