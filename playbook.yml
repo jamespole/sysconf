@@ -27,6 +27,6 @@
       exclusive: yes
   - name: Ensure packages are installed
     apt:
-      name:
+      pkg:
       - gnucash
     become: yes
