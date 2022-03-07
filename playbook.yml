@@ -29,11 +29,16 @@
     apt:
       pkg:
       - borgbackup
+      - composer
+      - doxbox
       - fdupes
       - firefox-esr-l10n-en-gb
       - gnucash
+      - jhead
       - libreoffice-l10n-en-gb
       - mpv
+      - pdfarranger
       - rclone
+      - vim-nox
       - webext-ublock-origin-firefox
     become: yes
