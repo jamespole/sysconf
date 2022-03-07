@@ -29,8 +29,9 @@
     apt:
       pkg:
       - borgbackup
-      - gnucash
+      - fdupes
       - firefox-esr-l10n-en-gb
+      - gnucash
       - libreoffice-l10n-en-gb
       - mpv
       - rclone
