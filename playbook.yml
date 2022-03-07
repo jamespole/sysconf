@@ -30,6 +30,8 @@
       pkg:
       - borgbackup
       - gnucash
+      - firefox-esr-l10n-en-gb
+      - libreoffice-l10n-en-gb
       - mpv
       - rclone
       - webext-ublock-origin-firefox
