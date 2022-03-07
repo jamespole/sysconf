@@ -51,5 +51,6 @@
       src: "{{ item }}.j2"
       dest: "/home/james/.{{ item }}"
     loop:
+    - bashrc
     - gitconfig
     - vimrc
