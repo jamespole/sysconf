@@ -28,5 +28,6 @@
   - name: Ensure packages are installed
     apt:
       pkg:
+      - borgbackup
       - gnucash
     become: yes
