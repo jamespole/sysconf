@@ -30,7 +30,7 @@
       pkg:
       - borgbackup
       - composer
-      - doxbox
+      - dosbox
       - fdupes
       - firefox-esr-l10n-en-gb
       - gnucash
