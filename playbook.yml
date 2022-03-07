@@ -30,4 +30,5 @@
       pkg:
       - borgbackup
       - gnucash
+      - rclone
     become: yes
