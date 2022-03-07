@@ -1,0 +1,25 @@
+" {{ ansible_managed }}
+"
+" Copyright (C) 2022 James Anderson-Pole
+"
+
+" Enables syntax highlighting by default.
+syntax on
+
+" Have Vim jump to the last position when reopening a file.
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Load indentation rules and plugins according to the detected filetype.
+filetype plugin indent on
+
+" Show (partial) command in status line.
+set showcmd
+
+" Incremental search.
+set incsearch
+
+" Use the appropirate number of spaces to insert a <Tab>.
+set expandtab
+
+" Number of spaces to use for each step of indent.
+set shiftwidth=4

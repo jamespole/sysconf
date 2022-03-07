@@ -25,10 +25,6 @@
       user: james
       key: https://github.com/jamespole.keys
       exclusive: yes
-  - name: Ensure ssh is configured
-    template:
-      src: config.j2
-      dest: /home/james/.ssh/config
   - name: Ensure packages are installed
     apt:
       pkg:
@@ -46,3 +42,11 @@
       - vim-nox
       - webext-ublock-origin-firefox
     become: yes
+  - name: Ensure ssh is configured
+    template:
+      src: config.j2
+      dest: /home/james/.ssh/config
+  - name: Ensure vim is configured
+    template:
+      src: vimrc.j2
+      dest: /home/james/.vimrc
