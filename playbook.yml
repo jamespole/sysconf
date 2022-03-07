@@ -32,4 +32,5 @@
       - gnucash
       - mpv
       - rclone
+      - webext-ublock-origin-firefox
     become: yes
