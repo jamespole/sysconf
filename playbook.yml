@@ -20,26 +20,16 @@
 
 - hosts: all
   tasks:
-  - name: Ensure public keys are installed
-    authorized_key:
-      user: james
-      key: https://github.com/jamespole.keys
-      exclusive: yes
   - name: Ensure packages are installed
     apt:
       pkg:
-      - borgbackup
       - composer
       - dosbox
-      - fdupes
       - firefox-esr-l10n-en-gb
       - gnucash
-      - jhead
       - libreoffice-l10n-en-gb
       - mpv
       - pdfarranger
-      - rclone
-      - vim-nox
       - webext-ublock-origin-firefox
     become: yes
   - name: Ensure ssh is configured
